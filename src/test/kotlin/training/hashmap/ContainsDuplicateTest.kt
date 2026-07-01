@@ -1,10 +1,11 @@
 package training.hashmap
 
-import org.junit.jupiter.api.Assertions
-import org.junit.jupiter.api.Test
+import kotlin.test.Test
+import kotlin.test.assertFalse
+import kotlin.test.assertTrue
 
 class ContainsDuplicateTest {
-    val containsDuplicate = ContainsDuplicate()
+    private val containsDuplicate = ContainsDuplicate()
 
     @Test
     fun `input empty`() {
@@ -13,7 +14,7 @@ class ContainsDuplicateTest {
         // when
         val output = containsDuplicate.solve(input)
         // then
-        Assertions.assertFalse(output)
+        assertFalse(output)
     }
 
     @Test
@@ -23,7 +24,7 @@ class ContainsDuplicateTest {
         // when
         val output = containsDuplicate.solve(input)
         // then
-        Assertions.assertFalse(output)
+        assertFalse(output)
     }
 
     @Test
@@ -33,7 +34,7 @@ class ContainsDuplicateTest {
         // when
         val output = containsDuplicate.solve(input)
         // then
-        Assertions.assertFalse(output)
+        assertFalse(output)
     }
 
     @Test
@@ -43,7 +44,7 @@ class ContainsDuplicateTest {
         // when
         val output = containsDuplicate.solve(input)
         // then
-        Assertions.assertTrue(output)
+        assertTrue(output)
     }
 
     @Test
@@ -53,7 +54,7 @@ class ContainsDuplicateTest {
         // when
         val output = containsDuplicate.solve(input)
         // then
-        Assertions.assertTrue(output)
+        assertTrue(output)
     }
 
     @Test
@@ -63,7 +64,7 @@ class ContainsDuplicateTest {
         // when
         val output = containsDuplicate.solve(input)
         // then
-        Assertions.assertFalse(output)
+        assertFalse(output)
     }
 
     @Test
@@ -73,6 +74,6 @@ class ContainsDuplicateTest {
         // when
         val output = containsDuplicate.solve(input)
         // then
-        Assertions.assertTrue(output)
+        assertTrue(output)
     }
 }
